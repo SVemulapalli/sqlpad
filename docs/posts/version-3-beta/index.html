@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>
     
-      SQLPad - A web app for running SQL queries and visualizing the results
-    
+Version 3 beta now available &ndash; SQLPad - A web app for running SQL queries and visualizing the results
+
   </title>
   <meta name="keywords" content="SQLPad, node.js, Postgres, postgresql, mysql, microsoft sql server, online sql editor">
   <meta name="description" content="SQLPad is a web app for writing and running SQL queries and visualizing the results. Supports Postgres, MySQL, and SQL Server. Built with Node.js">
@@ -46,56 +46,45 @@
     
 
 
-<article>
-  <header>
-    <section class="header">
-      <div class="row">
-        <h1>News and updates</h1>
-        
-      </div>
-    </section>
-  </header>
-  
-  <div class="docs-section">
-    <div class="row">
-        <div class="two columns">
-            <p> </p>
-        </div>
-        <div class="columns eight">
-            
-          <table class="u-full-width">
-              <thead>
-                <tr>
-                  <th>post_title</th>
-                  <th>posted_at</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                
-                <tr>
-                  <td><a href="https://rickbergfalk.github.io/sqlpad/posts/version-3-beta/">Version 3 beta now available</a></td>
-                  <td>2019-06-25</td>
-                </tr>
-                
-                <tr>
-                  <td><a href="https://rickbergfalk.github.io/sqlpad/posts/installation-and-administration/">Installation &amp; Administration</a></td>
-                  <td>2018-01-28</td>
-                </tr>
-                
-                
-              </tbody>
-            </table>
-
-        </div>
-    </div>
-
-    
+<section class="header">
+  <div class="row">
+    <h1>Version 3 beta now available</h1>
   </div>
-</article>
+</section>
 
+<div class="docs-section">
+  <div class="row">
+      <div class="one columns">
+          <p> </p>
+      </div>
+      <div class="columns nine">
+          
 
+<p>Version 3 beta has been published to npm &amp; docker. If you&rsquo;ve been using the <code>latest</code> docker image the last few weeks, you&rsquo;ve also been using it.</p>
 
+<p>When installing via npm referencing exact version or beta tag running the following command <code>npm install sqlpad@beta -g</code>.</p>
+
+<p>SQLPad v3 is backwards-compatible with SQLPad v2 database files, and is mostly a UI redesign/refresh and a large file structure change. Give it a try and if you aren&rsquo;t ready for it roll back to v2 and everything should still work.</p>
+
+<h4 id="editor-first-ui-refresh">Editor-first UI refresh</h4>
+
+<p>UI components previously based on bootstrap UI components are now replaced by custom components. Magenta is embraced as a secondary color.</p>
+
+<p>Management and listing pages (Queries, connections, users, and configuration) have been moved into side drawers, allowing management and browsing of things without leaving the current query. The query editor is the primary focus of the application.</p>
+
+<p>Query editor toolbars have been consolidated into a single bar to maximize use of space on the page.</p>
+
+<p>Unsaved changes to a previously-saved query are now saved, prompting the user to restore on next open. This is not enabled for unsaved changes to &ldquo;new&rdquo; queries since it could become an annoyance, but can be added if there is interest.</p>
+
+<p>Query result chart has been moved to a smaller resizable pane along side the SQL query instead of being placed in a tab. This impacts the size available for the chart, but brings it to the default view, allowing altering of the query without changing tabs.</p>
+
+<p>The schema sidebar may now be hidden and is now searchable. It has also been rewritten to render large trees efficiently.</p>
+
+<p>Query result grid no longer has data bars for numeric values since it didn&rsquo;t make sense for all number values. Date value display logic has been altered to only show timestamps if timestamps are detected. When timestamps are shown, the full timestamp from the JavaScript date object is displayed.</p>
+
+      </div>
+  </div>
+</div>
 
 
     

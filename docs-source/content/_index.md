@@ -10,7 +10,7 @@ draft: false
     <h1>SQLPad</h1>
   </div>
   <div class="row">
-    <h3>Run SQL in your browser <br/> and chart the results</h3>
+    <h3>Run SQL in your browser and chart the results</h3>
     <p><img class="u-max-full-width" src="images/screenshots/v3-beta.png" alt="SQLPad Query Editor" /></p>
   </div>
   <h3>

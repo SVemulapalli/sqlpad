@@ -1,7 +1,6 @@
 ---
 title: "Version 3 beta now available"
 date: 2019-06-25T21:14:48-04:00
-draft: true
 ---
 
 Version 3 beta has been published to npm & docker. If you've been using the `latest` docker image the last few weeks, you've also been using it.
